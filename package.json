@@ -1,0 +1,37 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "flow",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server --ext ts,js",
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HANJANGWON/flow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HANJANGWON/flow/issues"
+  },
+  "homepage": "https://github.com/HANJANGWON/flow#readme",
+  "dependencies": {
+    "@graphql-tools/load-files": "^6.6.0",
+    "@graphql-tools/merge": "^8.3.1",
+    "@graphql-tools/schema": "^8.5.1",
+    "@prisma/client": "^4.3.1",
+    "apollo-server": "^3.10.2",
+    "dotenv": "^16.0.2",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/node": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "nodemon": "^2.0.19",
+    "prisma": "^4.3.1"
+  }
+}
