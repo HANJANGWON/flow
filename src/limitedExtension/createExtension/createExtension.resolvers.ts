@@ -1,8 +1,13 @@
 import { Resolvers } from "../../types";
+import { createExtensionInput } from "./createExtention.dto";
 
 const resolvers: Resolvers = {
   Mutation: {
-    createExtension: async (_, { title, isCustom }, { prisma }) => {
+    createExtension: async (
+      _,
+      { title, isCustom }: createExtensionInput,
+      { prisma }
+    ) => {
       try {
         const existingExtension = await prisma.limitedExtension.findFirst({
           where: {
