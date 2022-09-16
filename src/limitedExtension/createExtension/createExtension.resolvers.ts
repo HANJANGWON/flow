@@ -5,7 +5,7 @@ const resolvers: Resolvers = {
   Mutation: {
     createExtension: async (
       _,
-      { title, isCustom }: createExtensionInput,
+      { title, isCustom, isActivated }: createExtensionInput,
       { prisma }
     ) => {
       try {
@@ -21,6 +21,7 @@ const resolvers: Resolvers = {
           data: {
             title,
             isCustom,
+            isActivated,
           },
         });
         return {
@@ -29,7 +30,7 @@ const resolvers: Resolvers = {
       } catch (e) {
         return {
           ok: false,
-          error: "Cant create account",
+          error: "Cant create extension",
         };
       }
     },

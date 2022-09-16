@@ -5,9 +5,6 @@ export default gql`
     id: Int!
     title: String!
     isCustom: Boolean!
-  }
-
-  type Query {
-    seeExtension(title: String!): LimitedExtension
+    isActivated: Boolean!
   }
 `;

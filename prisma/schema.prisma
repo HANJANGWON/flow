@@ -11,7 +11,10 @@ datasource db {
 }
 
 model LimitedExtension {
-  id       Int     @id @default(autoincrement())
-  title    String
-  isCustom Boolean
+  id          Int      @id @default(autoincrement())
+  title       String
+  isCustom    Boolean
+  isActivated Boolean
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }
