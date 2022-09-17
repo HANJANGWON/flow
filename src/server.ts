@@ -9,6 +9,7 @@ const PORT = process.env.PORT;
 const server = new ApolloServer({
   schema,
   plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
+  introspection: true,
   context: async () => {
     return {
       prisma,
