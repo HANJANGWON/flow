@@ -6,5 +6,6 @@ export default gql`
     title: String!
     isCustom: Boolean!
     isActivated: Boolean!
+    customExtensionsNumber: Int!
   }
 `;
