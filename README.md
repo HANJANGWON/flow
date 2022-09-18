@@ -46,7 +46,7 @@
 - `Styled Components ThemeProvider`를 이용하여 라이트 테마와 다크 테마를 설정합니다.
 - 모드 전환 시, 활성 상태를 로컬 스토리지에 저장하고, `Apollo Client Reactive variables`를 사용하여 local state를 업데이트합니다.
 
-> 3. 베포
+> 3. 배포
 
 - `Front-end` -> `Netlify`
 - `Back-end` -> `Heroku`
