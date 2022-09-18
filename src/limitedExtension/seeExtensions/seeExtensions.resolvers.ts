@@ -5,7 +5,7 @@ const resolvers: Resolvers = {
     seeExtensions: (_, __, { prisma }) =>
       prisma.limitedExtension.findMany({
         orderBy: {
-          createdAt: "desc",
+          createdAt: "asc",
         },
       }),
   },
